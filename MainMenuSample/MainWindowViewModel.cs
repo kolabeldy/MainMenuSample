@@ -22,7 +22,7 @@ public class MainWindowViewModel : BaseViewModel
 
     public MainWindowViewModel()
     {
-        SideMenu = new SideMenu(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sidemenu.db"));
+        SideMenu = new SideMenu(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "settings.db"));
         SideMenu.OnMenuChoise += MainMenuChoiseCommand;
     }
 
